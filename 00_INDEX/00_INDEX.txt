@@ -1,0 +1,577 @@
+
+/////////////////////MODULE 1///////////////////////////////////////////////
+1)INTRODUCTION TO JS 
+
+2)USING THE CONSOLE :
+HOW CONSOLE WORKS : REPL(READ - EVALUATE - PRINT - LOOP)
+
+3)WHAT IS VARIABLE?
+DEFINATION : A VARIABLE IS SIMPLY THE NAME OF A STORAGE LOCATION.
+->A = 5
+B = 10
+
+AREA  = A*10
+PARAMETE = 2(A+B)
+
+4)DATATYPES IN JS
+
+// number => 2 to power 53 
+// string => ""
+// boolean => true/false
+// null => standalone value. AND IT MEANS KI VARIALE KO DECLARE KAR DIYA HAI AND INTENTIONALLY NULL DE DIYA HAI.
+// undefined => THIS MEANS KI ABHI VALUE ASSINGN NAHI HUI HAI. AND HERE IT MEANS KI VARIABLE DECLARE KAR DIYA HAI AND ISKO ABHI DEFINE NAHI KARA HAI.
+
+
+// symbol => unique
+// bigint
+
+
+5)ARITHMATIC OPERATORS IN JS
+
+
+1)+
+2)-
+3)/
+4)*
+5)%
+
+6)AND(&&), OR(||) AND NOT(!)
+
+AND(&&)
+VAL1  VAL2  VALUE
+1       1       1
+1       0       0
+0       1       0
+0       0       0
+
+OR(||)
+VAL1  VAL2  VALUE
+1       1       1
+1       0       1
+0       1       1
+0       0       0
+
+NOT 
+0->1
+1->0
+
+8)OPERATOR PRECEDENEC 
+
+->BODMAS : 
+(5+2)/7+1*2 = (7)/7 + 1*2 -> 1 + 1*2 -> 3
+
+()
+**
+*,/,%
++,-
+
+(2+1)*3 -> 9
+4+1*6/2 ->15
+
+
+
+
+MODULO OPERATOR
+5)19 (3
+15
+4
+
+9)LET, VAR AND CONST KEYWORDS
+
+
+let a = 10;
+
+
+var a = 10;
+
+
+let age = 10;
+age = 20;
+
+
+var age = 10
+age = 20;
+
+const age = 10
+age = 20
+
+
+
+10)PRACTISE QUESTIONS
+
+let a = 10
+let age = 23; //23
+age + 2;      //25
+age;          //23
+
+
+11)ASSIGMENT OPERATORS : SHORTFORM
+
+1) age = age + 1;
+    age += 1
+2) age = age - 1;
+    age -= 1
+3) age = age * 1;
+    age *= 1
+4) age = age + 1;
+    age /= 1
+
+
+12)unary OPERATORS :
+a + b -> here a and b are operands and "+" is OPERATOR
+
+let a = a + 1
+a += 1
+a += 1
+a += 1
+a += 1
+a += 1
+
+INCREMENT unary OPERATORS : 
+// a++(POST ) :PHELE VALUE USE HOGI PHIR VALUE CHANGE HOGI 
+// ++a(PRE)   :PHELE VALUE CHNAGE HOGI PHIR VALUE USE HOGI 
+
+
+
+
+
+DECREMENT unary OPERATORS : 
+a--(POST)
+--a(PRE)
+
+
+13)PRACTISE QUESTIONS 
+
+
+let num = 5;
+console.log(num)      //5
+
+let newNum = num++;
+console.log(num)       //5
+console.log(newNum)    //6
+
+
+newNum = ++num;
+console.log(num)       //6
+console.log(newNum)    //5
+ 
+
+
+14)IDENTIFIERS RULES
+
+• Names can contain letters, digits, underscores, and dollar signs. (no space)
+• Names must begin with a letter.
+• Names can also begin with $
+• Names are case sensitive (y and Y are different variables).
+Reserved words (like JavaScript keywords) CANNOT be used as names.
+
+CASE : 
+
+1)camelCase : fullName: ITS NOT A RULE BUT TRY TO FOLLOW THIS CASE FOR JS.
+2)snake_case : full_name
+3)pascalCase : FullName 
+
+
+
+
+
+
+15)BOOLEAN IN JS
+DEFINATION : BOOLEAN REPRESENT A TRUTH VALUE/FALSE > true or false/yes or no.
+
+let a = true;
+a = 10;
+
+typeof
+typeof
+
+
+16)WHAT IS TYPESCRIPT
+->STATIC TYPED, WHERE JS IS DYNAMIC TYPED.
+->DESIGNED BY MICROSOFT.
+
+
+17)PRACTISE QUESTIONS 
+
+A)let 1age = 5
+  let 2age =  10
+
+B)let marks = 75;
+  let isPass = True;
+
+C)let isPass = 'true'
+
+18)STRING IN JS : STRINGS ARE TEXT OR SEQUENCE OF CHARACTERS
+
+let name = "Ritik KANADE"
+let role = "Intern${}"
+let grade = "a"
+let roll no = "100"
+let num = ""
+
+let a = 10
+let role = `Intern ${a}`
+
+->"" : MORE THAN ONE CHAR or '' : SINGLE CHAR
+->" Hello "vishal""  || ' Hello "vishal"' 
+->"""" , ''''
+
+
+19)STRING INDICES
+->JS IS 0 BASED INDEXING.
+->let s1 = "MANAS JAISWAL"
+console.log([4])
+
+let str = 'string   SOMETHIN'
+console.log(str[0])
+console.log(str[1])
+console.log(str[2])
+console.log(str[3])
+console.log(str[1000])
+
+console.log(str.length - 1)
+
+console.log(str[17])  //0 1 2 3 4 5 6
+
+let str1 = "Manas"
+
+let str2 = "Ishan"
+
+let finalstr = "Manas" + "Ishan"
+
+console.log(finalstr)
+
+
+20)NULL AND UNDEFINED IN JS
+
+undefined
+A variable that has not been assigned a value is of 
+type undefined.
+
+let a;
+undefined ;
+
+null
+The null value represents the intnetional absence of any object value
+to be explicitly 
+let a = null;
+a;
+null;
+
+21)PRACTISE QUESTIONS
+
+Practice Qs
+
+Qs. Declare your name as a string and print its length in JS.
+
+Qs. Declare your first name as a string and print its first character.
+
+Qs. Declare your first name as a string and print its last character.
+
+Qs. What is output of following code :
+
+"debugshala"+123
+
+
+/////////////////////////////MODULE 2///////////////////////////////////////////////////////
+
+01)console.log()
+
+->JS KO RUN KARNE K LIYE HUMKO USKA RUN TIME ENVIROMENT CHAIYE HOTA HAI. 
+->CHROME -> V8 ENGINE 
+
+
+02)LINKING JS FILE 
+
+
+
+03)TEMPLATE LITERALS :
+
+let name1 = "Manas"
+let nam2 = 'Ishan'
+let mark1 = 90
+let mark2 = 80
+
+output : ""Manas"" AND  ''Ishan' MARKS ARE 90 AND 80. ALSO  PRINT THIS PART ""''""
+
+{ ` ""Manas"" AND  ''Ishan' MARKS ARE ${mark1} AND ${mark2}. ALSO  PRINT THIS PART ""''""  ` }
+
+04)OPERATORS IN JS 
+
+05)COMPARISON OPERATORS
+1)==
+2)>=
+3)>
+4)<
+5)!=
+6)<=
+7)===
+
+console.log(null > 0)    //f
+console.log(null == 0)   //f
+console.log(null >= 0)   //t 
+
+/*
+STACKOVER-FLOW 
+
+Mathematically, that’s strange. The last result states that "null is greater than or equal to zero", so in one of the comparisons above it must be true, but they are both false.
+
+The reason is that an equality check == and comparisons > < >= <= work differently. Comparisons convert null to a number, treating it as 0. That’s why (3) null >= 0 is true and (1) null > 0 is false.
+
+On the other hand, the equality check == for undefined and null is defined such that, without any conversions, they equal each other and don’t equal anything else. That’s why (2) null == 0 is false.
+
+*/
+
+
+/*
+IMPORTANT NOTE : The reason is that an equality check == and comparisons > < >= <= work differently .
+Comparison convert null to a number, treating it as 0.
+That's why(3) null >= 0 is true and (1) null > 0 is false.
+*/
+
+
+
+06)COMPARISON FOR NON-NUMBERS
+
+07)CONDITIONAL STATEMENTS 
+
+08)IF STATEMENT
+
+->some code before it
+
+if(some codition){
+
+  //do something
+}
+
+09)ELSE-IF 
+
+if(some codition){
+
+  //do something
+}else if( some codition){
+
+        //do something
+}
+
+
+10)ELSE 
+
+11)PRACTISE QUESTIONS
+
+
+
+12)NESTED IF-ELSE
+
+if(){
+  if(){
+
+  }
+}else if(){
+
+  if(){
+
+
+  }
+}
+
+//N1 = 10
+  N2 = 20
+  N3 = 30
+
+if(N1<N2 && N1<N3){
+
+  if(N2<N3){
+    console.LOG(N1, N2 ,N3)
+  }else if(N2>N3){
+     console.LOG(N1, N3 ,N2)
+
+  }
+}else if (N2<N1 && N2<N3){
+
+  if(N1<N3){
+    console.LOG(N2, N1 ,N3)
+  }else if(N1>N3){
+     console.LOG(N2, N3 ,N1)
+}}else if(N3<N1 && N3<N2){
+
+  if(N1<N2){
+    console.LOG(N3, N1 ,N2)
+  }else if(N1>N2){
+     console.LOG(N3, N2 ,N1)
+}}
+
+_ _ _ _ 
+
+2
+if()
+
+
+13)LOGICAL OPERATORS
+
+AND(&&), OR(||) AND NOT(!)
+
+AND(&&)
+VAL1  VAL2  VALUE
+1       1       1
+1       0       0
+0       1       0
+0       0       0
+
+OR(||)
+VAL1  VAL2  VALUE
+1       1       1
+1       0       1
+0       1       1
+0       0       0
+
+NOT 
+0->1
+1->0
+
+14)PRACTISE QUESTIONS
+1)A "good string" is a string that starts with the letter 'a' & has a length > 3. Write a Program to find if a string is good or not.
+
+apple ->    good string
+bowansns -> not 
+ap ->       not
+
+CODE : 
+let str = "apple"
+
+// if (str.length>3 && str[0] === 'a') {
+//   console.log("Good string")
+// }else{
+//   console.log("not good string")
+// }
+
+2)let num = 12;
+
+3)12(4
+- 12 
+  00
+                      T
+        T                            T
+
+                            F                T
+if((num%3 === 0) && ((num + 1 == 15) || (num-1 == 11))){
+    console.log("SAFE")
+}else{
+
+    console.log("UNSAFE")
+}
+
+
+15)TRUTH AND FALSY :
+Everything in JS is true or false (in boolean context).
+This doesn't mean their value itself is false or true, but they are treated as false or true if taken in boolean context.
+
+->FALSY VALUES 
+false, 0, -0, On (Bigint value), "" (empty string), null, undefined, NaN
+
+->TRUTH VALUES : EVERYTHING ELSE, EXCEPT FALSY VALUES .
+
+if(NaN){
+  console.log("IT HAS A TRUE VALUE")
+}else{
+  console.log("IT HAS A FALSE EVALUE")
+}
+
+
+16)SWITCH STATEMENT
+
+->SYNTAX : 
+
+switch(key){
+  case value : 
+
+}
+
+let day = 1
+
+17)PRACTISE QUESTIONS : USE SWITCH STATEMENT TO PRINT THE DAY OF THE WEEK USING A NUMBER VARIABLE 'day' WITH VALUES 1 TO 7. 
+
+////////////////////////////MODULE 3/////////////////////////////////////////////////////
+
+
+01)STRING AND STRING METHODS
+
+01)TRIM METHODS
+
+02)STRING ARE IMMUTABLE IN JS
+
+03)TOUPPERCASE AND TOLOWERCASE
+
+04)METHODS AND ARGUMENTS - indexOf
+
+05)METHOD CHAINING
+
+06)SLICE METHOD 
+
+07)REPEAT AND REPLACE METHOD 
+
+08)PRACTISE QUESTIONS
+
+09)ARRAYS (DATA STRUCTURE)
+
+10)VISULIZING ARRAYS
+
+11)ARRAYS METHODS
+
+12)PRACTISE QUESTION
+
+13)INDEXOF AND INCLUDES METHOD
+
+14)CONCATENTAION AND REVERSE
+
+15)SLICE IN ARRAYS
+
+16)SORT IN ARRAY 
+
+17)PRACTISE QUESTIONS
+
+18)ARRAY REFRENCES
+
+19)CONSTANT ARRAYS
+
+20)NESTED ARRAYS 
+
+21)PRACTISE QUESTIONS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

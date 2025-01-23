@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <label for="1">Enter your username : </label>
+       
+        <input type="text" placeholder="enter your name" id = "21">
+
+        <br>
+
+        <label for="username">Enter your username : </label>
+       
+        <input type="text" placeholder="enter your name" id = "username">
+
+
+        <hr>
+
+       
+
+        <form autocomplete="on">
+            <input type="text" name="username">
+            <button type="submit">Submit</button>
+          </form>
+        <form autocomplete="off">
+            <input type="text" name="username">
+            <button type="submit">Submit</button>
+          </form>
+
+          <hr>
+
+          <form action="/submit" target="_self">
+            <input type="text" name="username">
+            <button type="submit">Submit</button>
+          </form>
+
+          <form action="/submit" target="_blank">
+            <input type="text" name="search">
+            <button type="submit">Search</button>
+          </form>
+
+          <iframe src="https://www.youtube.com/watch?v=I7LrS1z_WNA">
+            <!-- Inside /form-page.html -->
+            <form action="/submit" target="_parent">
+              <input type="text" name="feedback">
+              <button type="submit">Submit</button>
+            </form>
+          </iframe>
+
+          <iframe  ></iframe>
+        
+         
+</body>
+</html>
