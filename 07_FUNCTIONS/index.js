@@ -132,23 +132,123 @@ console.log(b)
 
 // console.log(fib(1))
 
-const calculator = {
+// const calculator = {
 
-    add : function(a, b){
-        return a+b;
-    }
+//     add : function(a, b){
+//         return a+b;
+//     }
 
 
-}
+// }
 
 //1) + - *  / % ! && || === 
+
+
+const calculator = {
+
+    "+" : (a, b) => a + b,
+    "-" : (a, b) => a - b,
+    "*" : (a, b) => a + b,
+    "/" : (a, b) => a + b,
+}
+
+console.log(calculator["+"](10, 5));
+
+//1)n < m
+
+// A, B
+
+ 
+
+
+
+
 
 //2) n*(n-1)!
 // 5*4*3*2*1 
 
 //3)Implement a function that generates a random password of a given length.
 
-console.log("addition", calculator.add(10,5))
+// console.log("addition", calculator.add(10,5))
+
+
+
+// var trap = function(height) {
+//     let n = height.length;
+//     if (n === 0) return 0;
+
+//     // Step 1: Create leftMax and rightMax arrays
+//     let leftMax = [];
+//     let rightMax = [];
+
+//     // [4, 2, 0, 3, 2, 5]
+
+//     // Step 2: Fill leftMax
+//     leftMax[0] = height[0];
+//     // console.log(leftMax[0])
+//     // console.log(height[0])
+//     for (let i = 1; i < n; i++) {
+//         //we have initilized leftmax by 0, than we comparing leftmax[i] and it is max of leftMax[i - 1] and height[i].
+//         leftMax[i] = Math.max(leftMax[i - 1], height[i]);
+//     }
+//     console.log(leftMax)
+    
+    
+//     // Step 3: Fill rightMax
+//     rightMax[n - 1] = height[n - 1];
+//     for (let i = n - 2; i >= 0; i--) {
+//         rightMax[i] = Math.max(rightMax[i + 1], height[i]);
+//     }
+//     console.log(rightMax)
+
+//     // Step 4: Calculate the trapped water
+//     let waterTrapped = 0;
+//     for (let i = 0; i < n; i++) {
+//         waterTrapped += Math.min(leftMax[i], rightMax[i]) - height[i];
+//     }
+
+//     return waterTrapped;
+// };
+
+
+
+// console.log(trap([4, 2, 0, 3, 2, 5]))
+
+
+// ## 3. Arrow Functions
+
+// ### What are Arrow Functions?
+// Arrow functions provide a concise syntax for writing functions. They use the `=>` syntax.
+
+
+// const add = (a, b) => a + b;
+
+// console.log(add(5, 3))
+
+
+// 6. setInterval Function
+
+
+// const interval = setInterval(()=> {
+
+//     console.log("hello ")
+
+// }, 500);
+
+// interval
+
+// setTimeout Function
+
+const interval = setTimeout(()=> {
+
+    console.log("hello ")
+
+}, 5000);
+
+
+interval
+
+
 
 
 

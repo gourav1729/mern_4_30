@@ -41,17 +41,17 @@ person.age = 28;
 // **Exercise:** Create a `instagram` object with properties `name`, `likes`, and `comments`
 
 
-const blogPost = {
+// const blogPost = {
 
-  title : "JS",
-  CONTENT : "OBJECTS IN JAVASCRIPT",
-  VIEWS : 100,
-}
+//   title : "JS",
+//   CONTENT : "OBJECTS IN JAVASCRIPT",
+//   VIEWS : 100,
+// }
 
 
-// console.log(blogPost.title)
-// console.log(blogPost.CONTENT)
-// console.log(blogPost.VIEWS)
+console.log(blogPost.title)
+console.log(blogPost.CONTENT)
+console.log(blogPost.VIEWS)
 
 
 // 6) NESTED OBJECTS :
