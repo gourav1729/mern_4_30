@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <h1>Students ID Cards</h1>
+    <ul id="shopingCart"  ></ul>
+
+    <script>
+    let arr = [
+    { Name: "Aarav Sharma", Internship: "DebugShala", Class: "MERN Full Stack", Mobile: "9876543210" },
+    { Name: "Ishaan Verma", Internship: "CodeCrafters", Class: "Python Developer", Mobile: "8765432109" },
+    { Name: "Kiara Singh", Internship: "TechGenius", Class: "Data Science", Mobile: "7654321098" },
+    { Name: "Rohan Gupta", Internship: "DebugShala", Class: "MERN Full Stack", Mobile: "6543210987" },
+    { Name: "Saanvi Mehta", Internship: "CodeNest", Class: "AI & ML", Mobile: "5432109876" },
+    { Name: "Kabir Joshi", Internship: "CyberEdge", Class: "Cybersecurity", Mobile: "4321098765" },
+    { Name: "Tanya Kapoor", Internship: "SoftDev", Class: "Java Developer", Mobile: "3210987654" },
+    { Name: "Ayaan Khanna", Internship: "AppWizards", Class: "Mobile App Development", Mobile: "2109876543" },
+    { Name: "Mira Bansal", Internship: "DebugShala", Class: "MERN Full Stack", Mobile: "1098765432" },
+    { Name: "Arjun Rao", Internship: "Creative UI", Class: "UI/UX Design", Mobile: "9988776655" },
+    { Name: "Ananya Nair", Internship: "CyberEdge", Class: "Cybersecurity", Mobile: "8877665544" },
+    { Name: "Vivaan Desai", Internship: "DataMasters", Class: "Data Science", Mobile: "7766554433" },
+    { Name: "Zoya Patel", Internship: "Pixel Perfect", Class: "Graphic Design", Mobile: "6655443322" },
+    { Name: "Rehan Malhotra", Internship: "BlockChainHub", Class: "Blockchain", Mobile: "5544332211" },
+    { Name: "Diya Aggarwal", Internship: "AI Innovations", Class: "AI & ML", Mobile: "4433221100" },
+    { Name: "Vihaan Sen", Internship: "IoT Connect", Class: "Internet of Things", Mobile: "3322110099" },
+    { Name: "Aadhya Pillai", Internship: "DebugShala", Class: "MERN Full Stack", Mobile: "2211009988" },
+    { Name: "Harsh Vardhan", Internship: "RoboTech", Class: "Robotics", Mobile: "1100998877" },
+    { Name: "Nia Thomas", Internship: "Cloud Wizards", Class: "Cloud Computing", Mobile: "9988776644" },
+    { Name: "Dev Chauhan", Internship: "App Masters", Class: "App Development", Mobile: "8877665533" },
+    { Name: "Kavya Iyer", Internship: "DataPros", Class: "Data Science", Mobile: "7766554422" },
+    { Name: "Rudra Menon", Internship: "UX Hub", Class: "UI/UX Design", Mobile: "6655443311" },
+    { Name: "Sanya Das", Internship: "Blockchain Wizards", Class: "Blockchain", Mobile: "5544332200" },
+    { Name: "Aarush Ghosh", Internship: "GameDev Co.", Class: "Game Development", Mobile: "4433221199" },
+    { Name: "Meher Kapoor", Internship: "AI Innovate", Class: "AI & ML", Mobile: "3322110088" },
+    { Name: "Yash Tiwari", Internship: "Web Crafters", Class: "Full Stack Web", Mobile: "1112233445" },
+    { Name: "Isha Bhatia", Internship: "SoftDev", Class: "Java Developer", Mobile: "2223344556" },
+    { Name: "Pranav Reddy", Internship: "DebugShala", Class: "MERN Full Stack", Mobile: "3334455667" },
+    { Name: "Sneha Chaturvedi", Internship: "CyberEdge", Class: "Cybersecurity", Mobile: "4445566778" },
+    { Name: "Aditya Malik", Internship: "DataHub", Class: "Big Data Analytics", Mobile: "5556677889" },
+    { Name: "Riya Anand", Internship: "Cloud Innovate", Class: "Cloud Computing", Mobile: "6667788990" },
+    { Name: "Omkar Patil", Internship: "Tech Warriors", Class: "Software Engineering", Mobile: "7778899001" },
+    { Name: "Simran Kaur", Internship: "Game Zone", Class: "Game Development", Mobile: "8889900112" },
+    { Name: "Manish Goyal", Internship: "FinTech Lab", Class: "FinTech Development", Mobile: "9990011223" },
+    { Name: "Ankita Jain", Internship: "IoT Smart", Class: "Internet of Things", Mobile: "1011121314" },
+    { Name: "Rajat Saxena", Internship: "AI Innovate", Class: "AI & ML", Mobile: "1213141516" },
+    { Name: "Nisha Chopra", Internship: "DebugShala", Class: "MERN Full Stack", Mobile: "1314151617" },
+    { Name: "Tarun Mehta", Internship: "Web Experts", Class: "Front-End Development", Mobile: "1415161718" },
+    { Name: "Shreya Basu", Internship: "CyberTech", Class: "Cybersecurity", Mobile: "1516171819" },
+    { Name: "Kunal Sinha", Internship: "SoftDev", Class: "Java Developer", Mobile: "1617181920" },
+    { Name: "Pooja Nair", Internship: "App Future", Class: "App Development", Mobile: "1718192021" },
+    { Name: "Vivek Rawat", Internship: "Data Wizards", Class: "Data Science", Mobile: "1819202122" },
+    { Name: "Aditi Thakur", Internship: "UX/UI Hub", Class: "UI/UX Design", Mobile: "1920212223" },
+    { Name: "Raghav Arora", Internship: "AI Labs", Class: "AI & ML", Mobile: "2021222324" },
+    { Name: "Pallavi Mishra", Internship: "Game Masters", Class: "Game Development", Mobile: "2122232425" },
+    { Name: "Neha Kapoor", Internship: "Web Builders", Class: "Full Stack Web", Mobile: "2223242526" },
+    { Name: "Rahul Deshmukh", Internship: "CyberSafe", Class: "Cybersecurity", Mobile: "2324252627" },
+    { Name: "Sakshi Sharma", Internship: "DebugShala", Class: "MERN Full Stack", Mobile: "2425262728" },
+    { Name: "Aman Raj", Internship: "CodeLab", Class: "Software Development", Mobile: "2526272829" }
+];
+
+console.log(arr);
+
+
+        const shoppingCart = document.getElementById('shopingCart');
+        let list = '';
+        for (let i = 0; i < arr.length; i++) {
+            list += `
+                <li style = "background-color: black; color:gold; height: 250px; width:250px">
+                    <b>S.no:-</b>   ${i} <br><br>
+                    <b>Name:-</b>   ${arr[i].Name} <br><br>
+                    
+                    <b>Internship:-</b>   ${arr[i].Internship} <br><br>
+                    <b>Class:-</b>   ${arr[i].Class} <br><br>
+                    <b>Mobile Number:- </b>   ${arr[i].Mobile} <br><br>
+                </li> <br><br><br>
+            `;
+        }
+
+        shoppingCart.innerHTML = list;
+    </script>
+</body>
+
+</html>
