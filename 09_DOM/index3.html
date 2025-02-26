@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Add Class Example</title>
+  <style>
+    .box {
+      width: 500px;
+      height: 500px;
+      background-color: lightgray;
+      margin: 10px;
+      transition: background-color 0.3s ease;
+    }
+    .highlight:hover {
+      background-color: red; 
+    }
+
+    /* .box {
+      width: 100px;
+      height: 100px;
+      background-color: black;
+      margin: 10px;
+      transition: background-color 0.3s ease;
+    }
+    .hidden {
+      display: none;
+    } */
+
+/* 
+    .box {
+      width: 500px;
+      height: 500px;
+      background-color: lightgray;
+      margin: auto;
+      transition: background-color 2s ease;
+    }
+    .active {
+      background-color: green;
+    } */
+  </style>
+</head>
+<body>
+
+    <!-- <div class="box hidden" id="myBox"></div>
+    <button onclick="removeHidden()">Show Box</button>
+  
+    <script>
+      function removeHidden() {
+        const box = document.getElementById('myBox');
+        box.classList.remove('hidden');
+      }
+    </script> -->
+  <div class="box" id="myBox"></div>
+  <button onclick="addHighlight()">Add Highlight</button>
+
+  <script>
+    function addHighlight() {
+      const box = document.getElementById('myBox');
+      box.classList.add('highlight');
+    }
+  </script>
+<!-- 
+  <div class="box" id="myBox"></div>
+  <button onclick="toggleActive()">Toggle Active</button>
+
+  <script>
+    function toggleActive() {
+      const box = document.getElementById('myBox');
+      box.classList.toggle('active');
+    }
+
+
+
+
+  </script> -->
+
+
+<!-- 
+1)select karna 
+2)change karna
+
+
+3)create + append 
+-->
+
+
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-
+  
 /////////////////////MODULE 1///////////////////////////////////////////////
 1)INTRODUCTION TO JS 
 
@@ -20,6 +20,11 @@ PARAMETE = 2(A+B)
 // boolean => true/false
 // null => standalone value. AND IT MEANS KI VARIALE KO DECLARE KAR DIYA HAI AND INTENTIONALLY NULL DE DIYA HAI.
 // undefined => THIS MEANS KI ABHI VALUE ASSINGN NAHI HUI HAI. AND HERE IT MEANS KI VARIABLE DECLARE KAR DIYA HAI AND ISKO ABHI DEFINE NAHI KARA HAI.
+
+let a;
+let a = null;
+
+
 
 
 // symbol => unique

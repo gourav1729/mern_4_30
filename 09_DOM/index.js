@@ -100,9 +100,15 @@
 
 
 
+let a = false;
 
 
-
+if(a =! true){
+    a = false 
+}else if(a =! false){
+    a = true
+}
+console.log(a)
 
 
 
