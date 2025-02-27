@@ -25,3 +25,6 @@ export default App
 
 
 // sum()
+
+// npm create vite@latest
+// npm run dev

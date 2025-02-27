@@ -51,3 +51,9 @@ firs
 ## 8)NITIN JHA 
 ## 9)ANKIT DHURVE
 
+
+
+
+1) npm create vite@latest : project 
+2) cd foldername 
+3) npm run dev 
