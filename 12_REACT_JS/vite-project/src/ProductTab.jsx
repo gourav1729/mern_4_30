@@ -1,4 +1,6 @@
 import Product from "./Product";
+import reactLogo from './assets/react.svg'
+import abc from './assets/abc.avif'
 
 function ProductTab() {
   let activities = [
@@ -28,28 +30,32 @@ function ProductTab() {
   console.log(activities1);
 
   return (
-    <>
+    <div className="ProductContainer" >
       {/* <h1>My producttab is working</h1> */}
 
-      <Product
+      <Product  
+        image = {abc} 
         location="MUSSOORIE"
         price="12000"
         day="3 days"
         activities={activities1}
       />
       <Product
+        image = {reactLogo} 
         location="MANALI"
         price="18000"
         day="4 days"
         activities={activities3}
       />
       <Product
+        image = {reactLogo} 
         location="SHIMLA"
         price="14000"
         day="2 days"
         activities={activities1}
       />
       <Product
+        image = {reactLogo} 
         location="OOTY"
         price="9000"
         day="1 day"
@@ -90,6 +96,7 @@ function ProductTab() {
         price="7500"
         day="1 day"
         activities={activities3}
+        image = {reactLogo} 
       />
       <Product
         location="VARANASI"
@@ -151,7 +158,7 @@ function ProductTab() {
         day="6 days"
         activities={activities3}
       />
-    </>
+    </div>
   );
 }
 

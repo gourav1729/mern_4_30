@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-
+    <img src={reactLogo} className="logo react" alt="React logo" />
     <ProductTab/>
     {/* <h1>Gourav</h1> */}
     </>
