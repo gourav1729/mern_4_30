@@ -12,7 +12,7 @@ function App() {
     {/* <h1>name</h1> */}
 
 
-      {/* <Counter></Counter> */}
+      <Counter></Counter>
       {/* <Events/> */}
       <LikeButton></LikeButton>
     </>

@@ -16,11 +16,18 @@ function LikeButton() {
   return (
     <div>
       <h1 style={Style}>Like button : {click}</h1>
-      <p onClick={toggleLike}>
+      <p onClick={toggleLike} >
         {isLiked ? (
-          <i class="fa-solid fa-heart"  style={likeStyle}></i>
+          <div>
+          <i class="fa-solid fa-heart"  style={likeStyle}></i> <br />
+          <i class="fa-solid fa-camera"></i>
+          </div>
         ) : (
-          <i class="fa-regular fa-heart"></i>
+          <div>
+          <i class="fa-regular fa-heart"></i> <br />
+          <i class="fa-solid fa-thumbs-up"></i>
+          </div>
+
         )}
       </p>
     </div>
