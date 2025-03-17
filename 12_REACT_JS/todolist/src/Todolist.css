@@ -87,7 +87,7 @@ body {
   }
   
   li {
-    background: #fff;
+    background:linear-gradient(135deg, #3cbed5, #d3e0ea);
     padding: 12px;
     margin: 7px 0;
     border-radius: 10px;

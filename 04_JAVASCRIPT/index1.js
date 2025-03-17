@@ -116,7 +116,7 @@ console.log(numbers)
 // - **Negative**: `a` is smaller, so it goes first.
 // - **Positive**: `b` is smaller, so it goes first.
 // - **Zero**: Both are equal.
-
+-10
 let arr10 = ["h", "e", "l", "l", "o"];
 let arr12 = ["l", "l", "o", "i", "e"];
 

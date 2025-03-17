@@ -4,22 +4,18 @@ import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
 function Todolist() {
-  let [todos, setTodos] = useState(["Sample task"]); 
+  let [todos, setTodos] = useState([{task: "sample task", id : uuidv4(), isDone: false}]);
 
   let [newTodo, setNewTodo] = useState("");
 
   let addNewTask = () => {
     // console.log('ADD NEW TASK')
-    setTodos([...todos, newTodo]);  
-    setNewTodo("")
-    console.log(todos)
-
+    setTodos([...todos, newTodo]);
+    setNewTodo("");
+    console.log(todos);
   };
 
-
   let updateTodoValue = (event) => {
-   
-
     setNewTodo(event.target.value);
   };
 
@@ -38,15 +34,13 @@ function Todolist() {
 
       <h2>TASK TO DO </h2>
       <ul>
-          {
-            todos.map((todo) => (
-
-              <li>{todo}</li>
-
-            ))} 
-           
+        {todos.map((todo) => (
+          <li>{todo}
+          
+          <button>Delete</button>
+          </li>
+        ))}
       </ul>
-
     </>
   );
 }
